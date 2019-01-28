@@ -9,9 +9,9 @@ var x = d3.scale.ordinal().rangePoints([0, 30], 1),
 // load csv file and create the chart
 
 d3.queue()
-    .defer(d3.csv, "/data/teamWinRank.csv")
-    .defer(d3.csv, "/data/team_season.csv")
-    .defer(d3.csv, "/data/player2000_2009.csv")
+    .defer(d3.csv, "data/teamWinRank.csv")
+    .defer(d3.csv, "data/team_season.csv")
+    .defer(d3.csv, "data/player2000_2009.csv")
     .await(function(error, dataTeamWinRank, dataTeamSeason, dataPlayers) {
         if (error) {
             console.error('Error: ' + error);
