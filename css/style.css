@@ -1,0 +1,179 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:400,600);
+body {
+  font-size: 14px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  margin: 10px auto 10px;
+  width: 1170px;
+  line-height: 1.45em;
+  background-color: #323232;
+  color: #ffffff; 
+}
+
+text {
+  fill:white;
+}
+
+h2,h4 {
+  color: rgb(0,171,214);
+}
+
+h5 {
+  color: #767676;
+}
+
+a:hover {
+  color: #000;
+}
+ul {
+  margin: 0 20px;
+  padding: 0;
+}
+.dark {
+  background: #222;
+}
+#parcoords {
+  min-height: 300px;
+  margin: 0px 0;
+}
+p {
+  width: 560px;
+}
+pre {
+  color: #444;
+  font-family: Ubuntu Mono, Monaco, monospace;
+  padding: 4px 8px;
+  background: #f2f2f2;
+  border: 1px solid #ccc;
+}
+h1 small {
+  font-weight: normal;
+  font-size: 0.5em;
+}
+
+.float {
+  float: left;
+}
+.centered {
+  text-align: center;
+}
+.hide {
+  display: none;
+}
+input {
+  font-size: 16px;
+}
+
+/*data table styles */
+  #grid { height: 240px; }
+  #grid > .grow, #grid > .header { clear: left; font-size: 11px; line-height: 24px; height: 24px; }
+  #grid > .header { font-weight: bold; }
+  #grid > .header > .cell { float: left; overflow: hidden; white-space: nowrap; width: 40px; }
+  #grid > .grow > .cell { float: left; overflow: hidden; white-space: nowrap; width: 40px; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221,221,221);}
+  #grid > .header > .col-0 { width: 40px; }
+  #grid > .grow > .col-0 { width: 40px; }
+
+  
+/* parcoords styles */
+.parcoords > svg, .parcoords > canvas { 
+  font: 11px "Source Code Pro", Consolas, monaco, monospace;
+  position: absolute;
+}
+.parcoords > canvas {
+  pointer-events: none;
+}
+
+.parcoords text.label {
+  cursor: default;
+}
+
+.parcoords rect.background {
+  fill: transparent;
+}
+.parcoords rect.background:hover {
+  fill: rgba(120,120,120,0.2);
+}
+.parcoords .resize rect {
+  fill: rgba(0,0,0,0.1);
+}
+.parcoords rect.extent {
+  fill: rgba(255,255,255,0.25);
+  stroke: rgba(0,0,0,0.6);
+}
+.parcoords .axis line, .parcoords .axis path {
+  fill: none;
+  stroke: #454545;
+  shape-rendering: crispEdges;
+}
+.parcoords canvas {
+  opacity: 1;
+  -moz-transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+}
+.parcoords canvas.faded {
+  opacity: 0.25;
+}
+.parcoords {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.gHighlight {
+  background-color: #005d74;
+}
+
+.gThisHighlight {
+  background-color: #4ddbff;
+}
+
+  #barChart > svg {
+    shape-rendering: crispEdges;
+  }
+
+  #barChart > svg > .bar {
+    fill: #004d60;
+  }
+
+  #barChart > svg > .bar.qTeam {
+    fill: #4ddbff;
+  }
+
+  #barChart > svg > .bar > .value {
+    font-size: 14px;
+    font-weight: 200;
+    fill: white;
+  }
+
+  #barChart > svg > .bar > .barLabel {
+    font-size: 14px;
+    fill: white;
+  }
+
+  #barChart > svg > .axis {
+    font-size: 12px;
+  }
+  #barChart > svg > .axis path {
+    fill: none;
+  }
+  #barChart > svg > .axis .tick line {
+    stroke-width: 1;
+    stroke: #d0d0d0;
+  }
+
+.tooltip {
+  position: absolute;
+  width: 200px;
+  height: 28px;
+  pointer-events: none;
+}
+
+#scatter > svg > g >.axis path,
+#scatter > svg > g >.axis line {
+  fill: none;
+  stroke: #d0d0d0;
+  shape-rendering: crispEdges;
+}
