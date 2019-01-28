@@ -8,7 +8,7 @@ presented in summer 2016 by JIE-TING JIANG and PORNPAN SONGPRASOP under the supe
 The dataset used in this project is two collections of related dataset of NBA players and 33 NBA teams regular season records from 1946 to 2009. It was retrieved from [http://www.databasebasketball.com/stats_download.htm](http://www.databasebasketball.com/stats_download.htm).  
 The following data and abbreviations are retrieved and used in this project:
 
-Abbreviation| Stand for
+Abbreviation| Stands for
 ------------|:------
 Firstname   | First name of a player  
 Lastname    | Last name of a player  
@@ -24,7 +24,7 @@ oreb        | Offensive Rebounds
 
 Beside the existing data, four new data types were fostered:  
   
-Abbreviation| Stand for  
+Abbreviation| Stands for  
 ------------|:------  
 WinRate     | A percentage of total win games divided by total games  
 WrRank      | A position based on winRate  
